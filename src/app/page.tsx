@@ -7,8 +7,8 @@ import { Input } from "@/components/ui/input";
 export default function Home() {
   return (
     <main>
-      <section className="bg-[#640d14] h-auto flex flex-col md:flex-row">
-        <div className="w-full md:w-[50%] md:pt-[5rem] text-[#fffcf2] p-[1.5rem] flex flex-col gap-[1rem]">
+      <section className="bg-[#640d14] h-auto flex flex-col md:flex-row gap-2">
+        <div className="w-full md:w-[49%] md:pt-[5rem] text-[#fffcf2] p-[1.5rem] flex flex-col gap-[1rem]">
           <p
             className="text-[8px] md:text-[1.3rem] text-white border border-white/20 rounded-md 
              text-center px-2 py-1
@@ -95,8 +95,8 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="w-full md:w-[50%] h-[70dvh] md:h-screen items-center flex justify-center p-[1rem] ">
-          <div className="relative h-[25rem] md:h-[80%] w-full flex items-center justify-center md:hover:scale-102 transition-all duration-300 ease-in-out">
+        <div className="w-full md:w-[49%] h-[70dvh] md:h-screen items-center flex justify-center p-[1rem] ">
+          <div className="relative h-[25rem] md:h-[90%] w-full flex items-center justify-center md:hover:scale-102 transition-all duration-300 ease-in-out">
             <Image
               src="/hero-image.jpg"
               alt="Hero Image"
