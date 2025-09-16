@@ -1,6 +1,11 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { CalendarCheck2, PhoneIncoming, CircleCheckBig } from "lucide-react";
+import {
+  CalendarCheck2,
+  PhoneIncoming,
+  CircleCheckBig,
+  MessageSquareQuote,
+} from "lucide-react";
 import Image from "next/image";
 import { Input } from "@/components/ui/input";
 
@@ -10,22 +15,23 @@ export default function Home() {
       <section className="bg-[#640d14] h-auto flex flex-col md:flex-row gap-2">
         <div className="w-full md:w-[49%] md:pt-[5rem] text-[#fffcf2] p-[1.5rem] flex flex-col gap-[1rem]">
           <p
-            className="text-[8px] md:text-[1.3rem] text-white border border-white/20 rounded-md 
+            className="text-[0.5rem] sm:text-[0.7rem] md:text-[1.3rem] text-white border border-white/20 rounded-md 
              text-center px-2 py-1
              bg-white/10 backdrop-blur-md shadow-md"
           >
             COMPLETE AUTO CARE • DETAILING • PROTECTION • SINCE 2011
           </p>
 
-          <h1 className="font-bold text-[1.5rem] md:text-[3rem] ">
-            Complete Auto Care, Right Here in Caloocan
+          <h1 className="font-bold text-[1.9rem] md:text-[3rem] ">
+            Complete Auto Care, Right Here in{" "}
+            <span className="text-[#FFC432]">CALOOCAN</span>
           </h1>
 
-          <p className="text-[10px] font-semibold md:text-[1.3rem]">
+          <p className="text-[1rem] font-semibold md:text-[1.3rem]">
             15+ Years • 200,000+ Cars • Trusted by Car Owners
           </p>
 
-          <p className="text-[10px] md:text-[1.1rem] ">
+          <p className="text-[0.8rem] md:text-[1.1rem] ">
             From quick washes to advanced ceramic coatings, we do it right the
             first time. Quality service, expert care, and your car back on
             schedule.
@@ -35,67 +41,69 @@ export default function Home() {
             {" "}
             <Button
               variant="ghost"
-              className="w-full md:w-[50%] bg-[#fffcf2] text-[#880d1e] font-bold text-[0.7rem] md:text-[1.2rem] h-8 md:h-[3rem] cursor-pointer 
+              className="w-full md:w-[50%] bg-[#fffcf2] text-[#880d1e] font-bold text-[1rem] md:text-[1.2rem] h-8 md:h-[3rem] cursor-pointer 
              transition-all duration-300 ease-in-out
              hover:bg-gradient-to-r hover:from-[#fffcf2] hover:to-[#880d1e] hover:text-white 
              hover:scale-105"
             >
-              <CalendarCheck2 size={20} /> Fix My Car
+              <CalendarCheck2 className="h-[1.5rem] w-[1.5rem]" /> Fix My Car
             </Button>
             <Button
               variant="ghost"
-              className="bg-[#fffcf2] w-full md:w-[50%] text-[#880d1e] font-bold text-[0.7rem] h-8 md:h-[3rem] md:text-[1.2rem]  cursor-pointer 
+              className="bg-[#fffcf2] w-full md:w-[50%] text-[#880d1e] font-bold text-[1rem] h-8 md:h-[3rem] md:text-[1.2rem]  cursor-pointer 
              transition-all duration-300 ease-in-out
              hover:bg-gradient-to-r hover:from-[#fffcf2] hover:to-[#880d1e] hover:text-white 
              hover:scale-105 animate-shake-pause"
             >
-              <PhoneIncoming size={20} /> Call Now
+              <PhoneIncoming className="h-[1.5rem] w-[1.5rem]" /> Call Now
             </Button>
           </div>
 
           <div className="flex justify-center gap-1">
             <p
-              className="text-[0.7rem] w-full text-white border border-white/20 rounded-md 
+              className="text-[0.8rem] md:text-[1.2rem] w-full text-white border border-white/20 rounded-md 
              text-center px-2 py-1
              bg-white/10 backdrop-blur-md shadow-md"
             >
-              201,567+ <br /> Cars Serviced
+              200+ <br /> Cars Serviced
             </p>
             <p
-              className="text-[0.7rem] w-full text-white border border-white/20 rounded-md 
+              className="text-[0.8rem] md:text-[1.2rem]  w-full text-white border border-white/20 rounded-md 
              text-center px-2 py-1
              bg-white/10 backdrop-blur-md shadow-md"
             >
-              201,567+ <br /> Cars Serviced
+              150+ <br /> Cars Serviced
             </p>
             <p
-              className="text-[0.7rem] w-full text-white border border-white/20 rounded-md 
+              className="text-[0.8rem] md:text-[1.2rem]   w-full text-white border border-white/20 rounded-md 
              text-center px-2 py-1
              bg-white/10 backdrop-blur-md shadow-md"
             >
-              201,567+ <br /> Cars Serviced
+              300+ <br /> Cars Serviced
             </p>
           </div>
 
-          <div className="bg-white  rounded-md pl-[1rem] text-black flex items-center gap-2 justify-center">
-            <div className="relative h-[2rem] w-[2rem] md:w-[4rem] md:h-[4rem] ">
+          <div className="bg-white rounded-md  text-black flex items-center sm:hidden lg:flex  gap-2 justify-center p-2">
+            <div className="relative h-[2.5rem] w-[2.5rem] md:w-[3rem] md:h-[3rem]  ">
               <Image
-                src="/google-icon.jpg"
+                src="/google.png"
                 alt="Logo"
                 fill
                 className="object-contain"
               />
             </div>
-            <p className="font-semibold text-[10px] md:text-[1.6rem]">
+            <p className="font-semibold text-[1rem] md:text-[1.6rem]">
               Google{" "}
             </p>
-            <p className="text-[12px] md:text-[2rem] text-yellow-300">★★★★★</p>
-            <p className="text-[10px] md:text-[1rem] font-semibold">
-              4.9(1,524 Reviews)
+            <p className="text-[1.2rem] md:text-[2rem] text-yellow-300">
+              ★★★★★
+            </p>
+            <p className="text-[0.5rem] md:text-[1rem] font-semibold text-center">
+              4.9 {""}(120 Reviews)
             </p>
           </div>
         </div>
-        <div className="w-full md:w-[49%] h-[30rem] md:h-screen items-center flex justify-center p-[1rem] ">
+        <div className="w-full md:w-[49%] h-[30rem] md:h-[45rem] items-center flex justify-center p-[1rem] ">
           <div className="relative h-[25rem] md:h-[90%] w-full flex items-center justify-center md:hover:scale-102 transition-all duration-300 ease-in-out">
             <Image
               src="/hero-image.jpg"
@@ -103,12 +111,14 @@ export default function Home() {
               fill
               className="object-cover rounded-md"
             />
-            <div className="absolute -top-3 -right-2 bg-[#fffcf2] w-[10rem] p-1 rounded-md flex items-center gap-2 justify-center shadow-lg ">
-              <CircleCheckBig size={20} className="text-green-400" />
-              <p className="text-[0.8rem] font-bold">Certified Detailer</p>
+            <div className="absolute -top-3 -right-2 bg-[#fffcf2] w-[10rem] md:w-[20rem] p-1 rounded-md flex items-center gap-2 justify-center shadow-lg ">
+              <CircleCheckBig className="text-green-400 md:h-[2rem] md:w-[2rem]" />
+              <p className="text-[0.8rem] md:text-[1.2rem] font-bold">
+                Certified Detailer
+              </p>
             </div>
 
-            <div className="absolute border border-white/50 bg-white/10 backdrop-blur-[0.3rem] shadow-lg rounded-lg w-[90%] bottom-4 h-[80%] md:h-[55%] p-[1rem] flex flex-col gap-3">
+            <div className="absolute border border-white/50 bg-white/10 backdrop-blur-[0.3rem] shadow-lg rounded-lg w-[90%] bottom-4 h-[60%] md:h-[55%] p-[1rem] flex flex-col gap-3">
               <p className="text-white text-center md:text-start font-bold md:text-[1.5rem]">
                 Get Your Free Service Quote
               </p>
@@ -141,9 +151,10 @@ export default function Home() {
 
               <Button
                 variant="ghost"
-                className="bg-[#FFC432] text-black font-semibold text-[0.7rem] md:text-[1.4rem] h-8 md:h-10 cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out "
+                className="bg-[#FFC432] md:mt-2 text-black font-bold text-[0.7rem] md:text-[1.4rem] h-8 md:h-12 cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out "
               >
-                Get a Quote
+                <MessageSquareQuote className=" md:h-[2rem] md:w-[2rem]" /> Get
+                a Quote
               </Button>
             </div>
           </div>
