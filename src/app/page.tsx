@@ -101,14 +101,14 @@ export default function Home() {
               src="/hero-image.jpg"
               alt="Hero Image"
               fill
-              className="object-cover rounded-md"
+              className="object-contain rounded-md"
             />
             <div className="absolute -top-3 -right-2 bg-[#fffcf2] w-[10rem] p-1 rounded-md flex items-center gap-2 justify-center shadow-lg ">
               <CircleCheckBig size={20} className="text-green-400" />
               <p className="text-[0.8rem] font-bold">Certified Detailer</p>
             </div>
 
-            <div className="absolute border border-white/50 bg-white/10 backdrop-blur-[0.3rem] shadow-lg rounded-lg w-[90%] bottom-4 h-[60%] md:h-[55%] p-[1rem] flex flex-col gap-3">
+            <div className="absolute border border-white/50 bg-white/10 backdrop-blur-[0.3rem] shadow-lg rounded-lg w-[90%] bottom-4 h-[80%] md:h-[55%] p-[1rem] flex flex-col gap-3">
               <p className="text-white text-center md:text-start font-bold md:text-[1.5rem]">
                 Get Your Free Service Quote
               </p>
