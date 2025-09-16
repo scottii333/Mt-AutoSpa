@@ -95,7 +95,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="w-full md:w-[49%] h-[70dvh] md:h-screen items-center flex justify-center p-[1rem] ">
+        <div className="w-full md:w-[49%] h-[30rem] md:h-screen items-center flex justify-center p-[1rem] ">
           <div className="relative h-[25rem] md:h-[90%] w-full flex items-center justify-center md:hover:scale-102 transition-all duration-300 ease-in-out">
             <Image
               src="/hero-image.jpg"
