@@ -1,6 +1,11 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { CalendarCheck2, PhoneIncoming, CircleCheckBig } from "lucide-react";
+import {
+  CalendarCheck2,
+  PhoneIncoming,
+  CircleCheckBig,
+  Ghost,
+} from "lucide-react";
 import Image from "next/image";
 import { Input } from "@/components/ui/input";
 
@@ -74,7 +79,7 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full sm:w-[50%] h-[70dvh] sm:h-screen items-center flex justify-center p-[1rem] ">
-          <div className="relative h-[100%] sm:h-[80%] w-full flex items-center justify-center">
+          <div className="relative h-[100%] sm:h-[80%] w-full flex items-center justify-center hover:scale-102 transition-all duration-300 ease-in-out">
             <Image
               src="/hero-image.jpg"
               alt="Hero Image"
@@ -83,17 +88,92 @@ export default function Home() {
             />
             <div className="absolute -top-3 -right-2 bg-[#fffcf2] w-[10rem] p-1 rounded-md flex items-center gap-2 justify-center shadow-lg ">
               <CircleCheckBig size={20} className="text-green-400" />
-              <p className="text-[0.8rem] font-semibold">Certified Detailer</p>
+              <p className="text-[0.8rem] font-bold">Certified Detailer</p>
             </div>
 
-            <div className="absolute bg-white/10 backdrop-blur-[0.3rem] shadow-lg rounded-lg w-[90%] bottom-4 h-[50%] p-[1rem] flex flex-col gap-3">
-              <p className="text-white font-semibold">Get Your Free Service Quote</p>
-             <Input placeholder="Your Name" className="bg-white text-gray-900" />
-<Input placeholder="Email" className="bg-white text-gray-900" />
-              <Button >Get a Quote</Button>
+            <div className="absolute border border-white/50 bg-white/10 backdrop-blur-[0.3rem] shadow-lg rounded-lg w-[90%] bottom-4 h-[60%] p-[1rem] flex flex-col gap-3">
+              <p className="text-white font-bold">
+                Get Your Free Service Quote
+              </p>
+              <Input
+                placeholder="Your Name"
+                className="bg-white text-gray-900 h-7"
+              />
+              <Input
+                placeholder="Email"
+                className="bg-white text-gray-900 h-7"
+              />
+              <Button
+                variant="ghost"
+                className="bg-[#FFC432] text-black font-semibold text-[0.7rem] h-8 cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out "
+              >
+                Get a Quote
+              </Button>
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="w-full h-auto bg-gradient-to-r from-yellow-500 from-0% via-yellow-300 to-yellow-500 to-100% flex justify-center flex-wrap pt-[2rem] pb-[2rem] gap-[1rem] ">
+        <p className="text-[#880d1e] font-bold text-center text-[1.8rem] flex flex-col w-[9rem]">
+          15+ <br />
+          <span className="relative inline-block pb-1 -mt-5">
+            <span className="text-white font-semibold text-[1rem]">
+              Years in Business
+            </span>
+            <span className="absolute left-1/2 -translate-x-1/2 -bottom-1 w-1/3 border-b-[5px] border-[#880d1e] rounded-full"></span>
+          </span>
+        </p>
+
+        <p className="text-[#880d1e] font-bold text-center text-[1.8rem] flex flex-col w-[9rem]">
+          200K <br />
+          <span className="relative inline-block pb-1 -mt-5">
+            <span className="text-white font-semibold text-[1rem]">
+              Cars Serviced
+            </span>
+            <span className="absolute left-1/2 -translate-x-1/2 -bottom-1 w-1/3 border-b-[5px] border-[#880d1e] rounded-full"></span>
+          </span>
+        </p>
+
+        <p className="text-[#880d1e] font-bold text-center text-[1.8rem] flex flex-col w-[9rem]">
+          100K <br />
+          <span className="relative inline-block pb-1 -mt-5">
+            <span className="text-white font-semibold text-[1rem]">
+              Happy Customers
+            </span>
+            <span className="absolute left-1/2 -translate-x-1/2 -bottom-1 w-1/3 border-b-[5px] border-[#880d1e] rounded-full"></span>
+          </span>
+        </p>
+
+        <p className="text-[#880d1e] font-bold text-center text-[1.8rem] flex flex-col w-[9rem]">
+          24/7 <br />
+          <span className="relative inline-block pb-1 -mt-5">
+            <span className="text-white font-semibold text-[1rem]">
+              Always Available
+            </span>
+            <span className="absolute left-1/2 -translate-x-1/2 -bottom-1 w-1/3 border-b-[5px] border-[#880d1e] rounded-full"></span>
+          </span>
+        </p>
+
+        <p className="text-[#880d1e] font-bold text-center text-[1.8rem] flex flex-col w-[9rem]">
+          100% <br />
+          <span className="relative inline-block pb-1 -mt-5">
+            <span className="text-white font-semibold text-[1rem]">
+              Quality Service
+            </span>
+            <span className="absolute left-1/2 -translate-x-1/2 -bottom-1 w-1/3 border-b-[5px] border-[#880d1e] rounded-full"></span>
+          </span>
+        </p>
+
+        <p className="text-[#880d1e] font-bold text-center text-[1.8rem] flex flex-col w-[9rem]">
+          100% <br />
+          <span className="relative inline-block pb-1 -mt-5">
+            <span className="text-white font-semibold text-[1rem]">
+              Expert Staff
+            </span>
+            <span className="absolute left-1/2 -translate-x-1/2 -bottom-1 w-1/3 border-b-[5px] border-[#880d1e] rounded-full"></span>
+          </span>
+        </p>
       </section>
     </main>
   );
