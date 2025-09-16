@@ -122,7 +122,7 @@ export default function Home() {
                 <Input
                   type="text"
                   placeholder="Enter your name"
-                  className="bg-white text-gray-900 h-7 md:h-12 text-sm md:text-lg"
+                  className="bg-white text-gray-900 h-7 md:h-12 text-base md:text-lg"
                 />
               </div>
 
@@ -135,7 +135,7 @@ export default function Home() {
                 <Input
                   type="email"
                   placeholder="Enter your email"
-                  className="bg-white text-gray-900 h-7 md:h-12 text-sm md:text-lg"
+                  className="bg-white text-gray-900 h-7 md:h-12 text-base md:text-lg"
                 />
               </div>
 
