@@ -15,7 +15,7 @@ export default function Home() {
       <section className="bg-[#640d14] h-auto flex flex-col md:flex-row gap-2">
         <div className="w-full md:w-[49%] md:pt-[5rem] text-[#fffcf2] p-[1.5rem] flex flex-col gap-[1rem]">
           <p
-            className="text-[0.5rem] sm:text-[0.7rem] md:text-[1.3rem] text-white border border-white/20 rounded-md 
+            className="text-[0.5rem] sm:text-[0.7rem] md:text-[1rem] text-white border border-white/20 rounded-md 
              text-center px-2 py-1
              bg-white/10 backdrop-blur-md shadow-md"
           >
@@ -28,7 +28,7 @@ export default function Home() {
           </h1>
 
           <p className="text-[1rem] font-semibold md:text-[1.3rem]">
-            15+ Years • 200,000+ Cars • Trusted by Car Owners
+            3+ Years • 1000+ Cars • Trusted by Car Owners
           </p>
 
           <p className="text-[0.8rem] md:text-[1.1rem] ">
@@ -84,7 +84,7 @@ export default function Home() {
           </div>
 
           <div className="bg-white rounded-md  text-black flex items-center sm:hidden lg:flex  gap-2 justify-center p-2">
-            <div className="relative h-[2.5rem] w-[2.5rem] md:w-[3rem] md:h-[3rem]  ">
+            <div className="relative h-[2.5rem] w-[2.5rem] md:w-[2.8rem] md:h-[2.8rem]  ">
               <Image
                 src="/google.png"
                 alt="Logo"
