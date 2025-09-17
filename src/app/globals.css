@@ -42,6 +42,24 @@ body {
   animation: shake-pause 2s ease-in-out infinite;
 }
 
+@keyframes glow-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 10px rgba(255, 196, 50, 0.4),
+      0 0 15px rgba(255, 196, 50, 0.25), 0 0 20px rgba(255, 196, 50, 0.15);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(255, 196, 50, 0.6),
+      0 0 20px rgba(255, 196, 50, 0.4), 0 0 30px rgba(255, 196, 50, 0.3);
+    transform: scale(1.05);
+  }
+}
+
+.animate-glow-pulse {
+  animation: glow-pulse 1.8s infinite;
+}
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
