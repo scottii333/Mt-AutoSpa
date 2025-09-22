@@ -4,6 +4,7 @@ import {
   CalendarCheck2,
   PhoneIncoming,
   CircleCheckBig,
+  Search,
   MessageSquareQuote,
 } from "lucide-react";
 import Image from "next/image";
@@ -223,7 +224,7 @@ export default function Home() {
         </p>
       </section>
 
-      <section className=" w-full h-auto flex flex-col items-center text-center p-[2rem] gap-[2rem]">
+      <section className=" w-full h-auto flex flex-col items-center text-center p-[1rem] gap-[2rem]">
         <div className="flex justify-center items-center gap-3 w-[12rem] p-2 bg-yellow-500 rounded-full">
           <CircleCheckBig />
           <p className="text-sm">WHAT WE OFFER</p>
@@ -240,6 +241,21 @@ export default function Home() {
             <span className="text-[#880d1e] font-bold">confidence</span> in the
             quality of our service.
           </p>
+        </div>
+
+        <div className="relative w-full md:w-[30rem]">
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
+          <Input
+            type="text"
+            placeholder="Search for services..."
+            className="pl-10 bg-white text-gray-900 h-10 md:h-12 text-base md:text-lg border border-gray-300 focus-visible:ring-yellow-400 focus-visible:border-yellow-400"
+          />
+        </div>
+
+        <div className="w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full p-[2rem]">
+            <div className="h-[30rem] shadow-lg"></div>
+          </div>
         </div>
       </section>
     </main>
