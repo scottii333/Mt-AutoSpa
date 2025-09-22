@@ -253,8 +253,69 @@ export default function Home() {
         </div>
 
         <div className="w-full">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full p-[2rem]">
-            <div className="h-[30rem] shadow-lg"></div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full p-8">
+            {/* Service Card */}
+            <div className="h-[30rem] bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+              {/* Top Image Section */}
+              <div className="relative h-40 w-full">
+                <Image
+                  src="/hero-image.jpg"
+                  alt="Service"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+                {/* Top-left Badge */}
+                <div className="absolute top-3 left-3 bg-white/80 text-gray-800 text-sm font-bold px-3 py-1 rounded-full">
+                  01
+                </div>
+                {/* Bottom-left Badge */}
+                <div className="absolute bottom-3 left-3 bg-blue-900 text-white text-xs px-3 py-1 rounded-full">
+                  Mechanical
+                </div>
+                {/* Top-right Badge */}
+                <div className="absolute top-3 right-3 bg-yellow-400 text-black text-xs font-semibold px-3 py-1 rounded-full">
+                  Mechanical
+                </div>
+              </div>
+
+              {/* Content Section */}
+              <div className="flex flex-col flex-grow p-4 text-left">
+                <h3 className="font-bold text-lg text-gray-900">
+                  Mechanical Repairs & General Maintenance
+                </h3>
+                <p className="text-sm text-gray-600 mt-2">
+                  Comprehensive mechanical repairs and general maintenance
+                  services for all vehicle systems including engine,
+                  transmission, suspension, steering, and more.
+                </p>
+
+                {/* Services List */}
+                <ul className="mt-3 text-sm space-y-1">
+                  <li className="flex items-center text-green-600">
+                    <span className="mr-2">✔</span> Engine Diagnostics & Repair
+                  </li>
+                  <li className="flex items-center text-green-600">
+                    <span className="mr-2">✔</span> Gearbox & Transmission
+                    Service
+                  </li>
+                  <li className="flex items-center text-green-600">
+                    <span className="mr-2">✔</span> Suspension System Check
+                  </li>
+                </ul>
+                <p className="text-yellow-500 text-sm mt-2">+5 more services</p>
+
+                {/* Buttons */}
+                <div className="mt-auto flex flex-col gap-3 pt-4">
+                  <button className="w-full bg-blue-900 text-white rounded-lg py-2 flex items-center justify-center gap-2 hover:bg-blue-800">
+                    👁 View Details
+                  </button>
+                  <button className="w-full border border-blue-900 text-blue-900 rounded-lg py-2 flex items-center justify-center gap-2 hover:bg-blue-50">
+                    📅 Book Service
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
