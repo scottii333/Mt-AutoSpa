@@ -222,6 +222,26 @@ export default function Home() {
           </span>
         </p>
       </section>
+
+      <section className=" w-full h-auto flex flex-col items-center text-center p-[2rem] gap-[2rem]">
+        <div className="flex justify-center items-center gap-3 w-[12rem] p-2 bg-yellow-500 rounded-full">
+          <CircleCheckBig />
+          <p className="text-sm">WHAT WE OFFER</p>
+        </div>
+
+        <div className="flex flex-col gap-[1rem] max-w-[50rem]">
+          <h2 className="text-[2rem]">
+            Our Experts{" "}
+            <span className="text-[#880d1e] font-bold">Services</span>
+          </h2>
+          <p className="text-[1.2rem]">
+            From quick washes to advanced coatings, our certified technicians
+            deliver expert care every time. Drive away with total{" "}
+            <span className="text-[#880d1e] font-bold">confidence</span> in the
+            quality of our service.
+          </p>
+        </div>
+      </section>
     </main>
   );
 }
