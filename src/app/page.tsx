@@ -255,7 +255,7 @@ export default function Home() {
         <div className="w-full">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full p-8">
             {/* Service Card */}
-            <div className="h-auto bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+            <div className="h-[35rem] bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
               {/* Top Image Section */}
               <div className="relative h-40 w-full">
                 <Image
@@ -316,7 +316,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="h-auto bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+            <div className="h-[35rem] bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
               {/* Top Image Section */}
               <div className="relative h-40 w-full">
                 <Image
@@ -377,7 +377,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="h-auto bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+            <div className="h-[35rem]  bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
               {/* Top Image Section */}
               <div className="relative h-40 w-full">
                 <Image
